@@ -1,3 +1,21 @@
+:root {
+    --bg-primary: #0a192f;
+    --bg-secondary: #112240;
+
+    --text-primary: #ffffff;
+    --text-secondary: #8892b0;
+    
+    --accent-primary: #64ffda;
+    --accent-secondary: #00bcd4;
+
+    --border-primary: #233554;
+    --border-secondary: #2a405d;
+
+    --shadow-primary: rgba(100, 255, 218, 0.2);
+    --shadow-secondary: rgba(0, 188, 212, 0.3);
+    
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +24,15 @@
 }
 
 body {
-  background-color: lightslategrey;
-  color: #333;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
   text-align: center;
 }
 
 /* Navbar */
 .wrapper-content {
-  background-color: gray;
+  background-color: var(--bg-secondary);
   width: 100%;
   height: 60px;
   display: flex;
@@ -24,6 +42,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
+  box-shadow: 0 4px 8px var(--shadow-primary);
 }
 
 .nav-links {
@@ -34,14 +53,14 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-secondary);
   font-weight: bold;
   padding: 10px;
   transition: 0.3s;
 }
 
 .nav-links li a:hover {
-  color: black;
+  color: var(--accent-primary);
 }
 
 /* Section Container */
@@ -55,17 +74,19 @@ body {
 .profile-img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 10px;
   object-fit: cover;
+  border: 3px solid var(--accent-primary);
+  box-shadow: 0 0 15px var(--shadow-secondary);
 }
 
 /* Highlight */
 .highlight {
-  color: white;
+  color: var(--accent-primary);
 }
 
 .highlight-2 {
-  color: red;
+  color: var(--accent-secondary);
 }
 
 /* Skill List */
@@ -77,13 +98,67 @@ body {
 .skill-list li {
   font-size: 1.2em;
   margin: 10px 0;
+  color: var(--accent-primary);
+}
+
+/* Tombol */
+button {
+  background-color: var(--accent-secondary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-primary);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px var(--shadow-secondary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent-primary);
+  box-shadow: 4px 4px 10px var(--shadow-primary);
 }
 
 /* Social Links */
 .social-links a {
   display: inline-block;
-  color: white;
+  color: var(--accent-secondary);
   text-decoration: none;
   font-size: 20px;
   margin: 10px;
+}
+
+.social-links a:hover {
+  color: var(--accent-primary);
+}
+
+#about {
+  background-color: #00bcd4; /* Warna latar */
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 60%;
+  margin: 15px auto;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+  text-align: center;
+  border: 2px solid black;
+}
+
+#about .container {
+  max-width: 400px;
+  margin: auto;
+}
+
+#skills {
+  background-color: #00bcd4;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 60%;
+  margin: 15px auto;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+  text-align: center;
+  border: 2px solid black;
+}
+
+#skills .container {
+  max-width: 400px;
+  margin: auto;
 }
