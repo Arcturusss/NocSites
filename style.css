@@ -121,7 +121,7 @@ button:hover {
 /* Social Links */
 .social-links a {
   display: inline-block;
-  color: var(--accent-secondary);
+  color: white;
   text-decoration: none;
   font-size: 20px;
   margin: 10px;
