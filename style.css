@@ -142,6 +142,18 @@ button:hover {
   border: 2px solid black;
 }
 
+#word {
+  text-align: center;
+  padding-block: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  opacity: 0;
+  margin-top: 10px;
+  font-family: sans-serif;
+  transition: opacity 0.5s ease-in-out;
+}
+
 #about .container {
   max-width: 400px;
   margin: auto;
@@ -161,4 +173,23 @@ button:hover {
 #skills .container {
   max-width: 400px;
   margin: auto;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--accent-secondary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-primary);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px var(--shadow-secondary);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent-primary);
+  box-shadow: 4px 4px 10px var(--shadow-primary);
 }
